@@ -41,10 +41,11 @@ length( salaries$got.raise[salaries$got.raise == TRUE] )
 
 # What was the value of the highest raise?
 
-max(salaries$raise)
+highest.raise <- max(salaries$raise)
 
 # What was the "name" of the employee who received the highest raise?
 
+highestraise.employee <- salaries$employee[salaries$raise == highest.raise]
 
 # What was the largest decrease in salaries between the two years?
 
